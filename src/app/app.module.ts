@@ -11,7 +11,9 @@ import { LayoutModule } from '@angular/cdk/layout';
 import { MatToolbarModule, MatButtonModule, MatSidenavModule, MatIconModule, MatListModule, MatTableModule, MatPaginatorModule, MatSortModule, MatGridListModule, MatCardModule, MatMenuModule } from '@angular/material';
 import { MatTableComponent } from './mat-table/mat-table.component';
 import { MatBoardComponent } from './mat-board/mat-board.component';
-import { FormEventComponent } from './form-event/form-event.component';
+import { FormEventComponent } from './dashboard/Events/form-event/form-event.component';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
+import {HttpClientModule} from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -39,6 +41,10 @@ import { FormEventComponent } from './form-event/form-event.component';
     MatGridListModule,
     MatCardModule,
     MatMenuModule,
+    FormsModule,
+    HttpClientModule,
+    ReactiveFormsModule,
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
